@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row_con">
+    <form [formGroup]="loginForm" (ngSubmit)="submitHandler()">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          formControlName="email"
+          class="form-control"
+        />
+        <span
+          *ngIf="
+            loginForm.controls['email'].touched &&
+            loginForm.controls['email'].invalid
+          "
+          >Enter valid Email</span
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          formControlName="password"
+          class="form-control"
+        />
+        <span
+          *ngIf="
+            loginForm.controls['password'].touched &&
+            loginForm.controls['password'].invalid
+          "
+          >Password length is 8</span
+        >
+      </div>
+      <p *ngIf="buttonClicked && !loggedIn">Please Check Email & Password</p>
+      <button [disabled]="!loginForm.valid" class="btn btn-primary">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.containers {
+  width: 700px;
+  margin: auto 10px;
+}
+
+.product_container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  margin: auto 10px;
+}
+.img {
+  width: 200px;
+  height: 200px;
+}

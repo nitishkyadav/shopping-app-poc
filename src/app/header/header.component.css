@@ -1,0 +1,15 @@
+button {
+  /* margin-right: 50px; */
+}
+.navbar-collapse {
+  justify-content: flex-end;
+  /* gap: 20px; */
+}
+
+.nabar-brand {
+  margin-left: 10px;
+}
+
+.nav {
+  padding: auto 10px;
+}

@@ -1,0 +1,28 @@
+.cart-item-container {
+  display: flex;
+  gap: 3rem;
+  margin: 2rem auto;
+  /* border: 1px solid black; */
+  padding: 0.5rem;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.cart-item-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}

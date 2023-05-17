@@ -1,0 +1,22 @@
+.o-container {
+  margin: 0 auto;
+}
+
+.product-container {
+  margin: 6rem auto;
+  display: flex;
+  gap: 2rem;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+.category {
+  color: grey;
+}
+
+button {
+  margin: 20px auto;
+}

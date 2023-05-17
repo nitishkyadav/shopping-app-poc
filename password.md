@@ -1,0 +1,12 @@
+{
+"name": "Nitish Kumar Yadav",
+"email": "nitish.yadav@infogain.com",
+"password": "@12345678@",
+"isAdmin": true
+},
+{
+"name": "Saurabh Shankar Mishra",
+"email": "saurabh1.mishra@infogain.com",
+"password": "@12345678@",
+"isAdmin": false
+}

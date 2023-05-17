@@ -1,0 +1,20 @@
+<!--  -->
+
+<div class="cart-item-container">
+  <div class="img-container">
+    <img [src]="cartItem.image" alt="cartItem.title" />
+  </div>
+
+  <div class="cart-item-detail">
+    <h4>{{ cartItem.title }}</h4>
+    <p>{{ cartItem.price }}/item</p>
+
+    <div class="btn-container">
+      <button class="btn btn-primary" (click)="decrementHandler()">-</button>
+      <h5>x{{ cartItem.quantity }}</h5>
+      <button class="btn btn-primary" (click)="incrementHandler()">+</button>
+    </div>
+  </div>
+</div>
+<hr />
+<!--  -->

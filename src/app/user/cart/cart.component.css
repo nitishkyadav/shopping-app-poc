@@ -1,0 +1,21 @@
+.price-btn {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 20px;
+  align-items: center;
+}
+
+.cart-empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px auto;
+  /* width: 300px; */
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+
+.cart-empty h4 {
+  /* text-align: center;
+   */
+}

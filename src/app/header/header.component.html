@@ -1,0 +1,44 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand">Shopping App</a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <!-- For Normal User -->
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" *ngIf="isLoggedIn && !isAdmin">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/products']">Products</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/cart']">Cart</a>
+      </li>
+    </ul>
+
+    <!-- For Admin User -->
+
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0" *ngIf="isLoggedIn && isAdmin">
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/admin/products']">Products</a>
+      </li>
+    </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <button
+        *ngIf="isLoggedIn"
+        class="btn btn-outline-success my-2 my-sm-0"
+        type="button"
+        (click)="logoutHandler()"
+      >
+        Logout
+      </button>
+
+      <button
+        *ngIf="!isLoggedIn"
+        class="btn btn-outline-success my-2 my-sm-0"
+        type="button"
+        [routerLink]="['/login']"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</nav>

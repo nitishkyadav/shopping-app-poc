@@ -1,0 +1,37 @@
+<div class="o-container">
+  <div class="product-container" *ngIf="product as productDetail">
+    <div class="img-container">
+      <img [src]="productDetail.image" [alt]="productDetail.title" />
+    </div>
+    <div class="product-detail">
+      <h3>{{ productDetail.title }}</h3>
+      <p class="category">Category: {{ productDetail.category }}</p>
+
+      <hr />
+      <h3>Price: $ {{ productDetail.price }}</h3>
+
+      <form (ngSubmit)="formSubmit(f)" #f="ngForm">
+        <div class="form-group">
+          <label for="quantity">Choose Items</label>
+          <select
+            class="form-select"
+            name="quantity"
+            id="quantity"
+            [(ngModel)]="defaultQuantity"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" type="submit">Add to Cart</button>
+      </form>
+
+      <h5>Product Details</h5>
+      <p>{{ productDetail.description }}</p>
+    </div>
+  </div>
+</div>

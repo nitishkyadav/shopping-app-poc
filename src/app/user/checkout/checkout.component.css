@@ -1,0 +1,19 @@
+span {
+  color: red;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 100px auto;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+label {
+  margin-top: 15px;
+}
+
+button {
+  margin: 15px auto;
+}

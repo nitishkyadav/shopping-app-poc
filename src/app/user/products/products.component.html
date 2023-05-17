@@ -1,0 +1,18 @@
+<p *ngIf="!products">No Product Found</p>
+
+<div *ngIf="products" class="products-container">
+  <div *ngFor="let product of products" class="product-container">
+    <div class="imgContainer">
+      <img [src]="product.image" [alt]="product.title" />
+    </div>
+    <div class="product-detail">
+      <ul>
+        <li class="name">
+          <a [routerLink]="['/products', product.id]"> {{ product.title }}</a>
+        </li>
+        <li class="category">{{ product.category }}</li>
+        <li class="price">$ {{ product.price }}</li>
+      </ul>
+    </div>
+  </div>
+</div>
